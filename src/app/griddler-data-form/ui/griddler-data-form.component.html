@@ -1,0 +1,28 @@
+<form [formGroup]="formGroup" class="griddler-data-form">
+  <mat-form-field appearance="fill">
+    <mat-label>Algorytm</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let alg of algorithms" [value]="alg.code">
+        {{ alg.name }}
+      </mat-option>
+      <!--TODO trackby-->
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Definicja wierszy nonogramu</mat-label>
+    <textarea matInput
+              cdkTextareaAutosize
+              cdkAutosizeMinRows="10"
+              cdkAutosizeMaxRows="30"></textarea>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Definicja kolumn nonogramu</mat-label>
+    <textarea matInput
+              cdkTextareaAutosize
+              cdkAutosizeMinRows="10"
+              cdkAutosizeMaxRows="30"></textarea>
+  </mat-form-field>
+
+</form>
