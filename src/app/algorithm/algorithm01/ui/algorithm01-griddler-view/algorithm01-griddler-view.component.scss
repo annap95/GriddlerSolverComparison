@@ -1,0 +1,14 @@
+.algorithm-01-griddler-view-wrapper {
+  display: grid;
+  gap: 2px;
+  background-color: grey;
+  width: fit-content;
+  border: 2px solid grey;
+
+  .algorithm-01-griddler-view-cell {
+
+    &:not(.algorithm-01-griddler-view-cell-full) {
+      background-color: white;
+    }
+  }
+}

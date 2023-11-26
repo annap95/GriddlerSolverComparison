@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Algorithm } from '../../algorithm/core/model/algorithm';
-import { ALGORITHMS } from '../../algorithm/core/model/algorithms';
+import { Algorithm } from '../../algorithm/core/model/algorithm/algorithm';
+import { ALGORITHMS } from '../../algorithm/core/model/algorithm/algorithms';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { GriddlerDataFormComponent } from '../../griddler-data-form/ui/griddler-data-form.component';

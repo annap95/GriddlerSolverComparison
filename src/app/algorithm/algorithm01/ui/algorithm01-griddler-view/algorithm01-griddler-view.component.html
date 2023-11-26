@@ -1,0 +1,11 @@
+<div class="algorithm-01-griddler-view-wrapper"
+    [style.grid-template-columns]="'repeat(' + griddler?.getWidth() + ', 20px)'"
+    [style.grid-template-rows]="'repeat(' + griddler?.getHeight() + ', 20px)'">
+    <ng-container *ngFor="let line of griddler?.getRows()">
+        <ng-container *ngFor="let cell of line.getCells()">
+            <div class="algorithm-01-griddler-view-cell"
+                [class.algorithm-01-griddler-view-cell-full]="cell.getStatus() === CellStatus.FULL">
+            </div>
+        </ng-container>
+    </ng-container>
+</div>
